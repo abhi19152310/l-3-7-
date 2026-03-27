@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Problem 7</title>
+    <script>
+        // Function to print numbers from 1 to N
+        function printNumbers() {
+            var n = parseInt(document.getElementById("num").value);
+            var i = 1;
+            var output = "";
+
+            // While loop
+            while (i <= n) {
+                output += i + " ";
+                i++;
+            }
+
+            document.getElementById("result").innerHTML = output;
+        }
+    </script>
+</head>
+<body>
+
+    <h2>Print Numbers from 1 to N</h2>
+    Enter N: <input type="text" id="num">
+    <button onclick="printNumbers()">Print</button>
+
+    <p id="result"></p>
+    <h1>D.Abhishek</h1>
+    <h1>24BKT0064</h1>
+</body>
+</html>
